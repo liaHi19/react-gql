@@ -33,3 +33,11 @@ export const UPDATE_TODO = gql`
     }
   }
 `;
+
+export const REMOVE_TODO = gql`
+  mutation RemoveTodo($id: ID!) {
+    removeTodo(id: $id) {
+      id
+    }
+  }
+`;
