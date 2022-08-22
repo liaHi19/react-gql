@@ -8,7 +8,6 @@ import TotalCount from "./TotalCount";
 import { ALL_TODOS } from "../apollo/todos";
 
 const TodoList = () => {
-  const todos = [];
   const { data, error, loading } = useQuery(ALL_TODOS);
 
   if (loading) {
